@@ -4,6 +4,7 @@
 import './App.scss'
 import Navbar  from './navbar/Navbar' 
 import Section1 from './section1/Section1'
+import Section2 from './section2/Section2'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
   <Navbar />
   <Section1 />
+  <Section2 />
     </>
   )
 }

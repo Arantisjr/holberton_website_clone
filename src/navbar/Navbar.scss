@@ -30,7 +30,7 @@ header{
             gap: 1rem;
             color: $bgc_button; 
 
-            &:hover{
+            li:hover{
                 color:$hover_text ;
             }
         }

@@ -9,6 +9,8 @@ margin-top: 0;
 
     .main_container{
         padding-top: 15rem;
+        padding-bottom: 12rem;
+        position: relative;
 
             .text_div p{
                 padding: 0;
@@ -58,11 +60,13 @@ margin-top: 0;
                 img{
                     width: 100%;
                 }
-    }
-    .flaoting_image{
-
-            .img{
-                height: 2rem;
+                .flaoting_image img{
+                    max-width: 16%;
+                    position: absolute;
+                    top: 4rem;
+                    right: 0;
+                   
             }
     }
+  
 }

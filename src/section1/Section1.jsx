@@ -19,10 +19,12 @@ const Section1 = () =>{
             <button className='learn_more'><a href="">Learn more</a></button>
             </div>
             <img src={page_image} alt="an image of a girl" />
-            </div>
+
             <div className="flaoting_image">
                 <img src={floating_imgae} alt="logo_image" />
             </div>
+            </div>
+            
         </section>
         
         </>
