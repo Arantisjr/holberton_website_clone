@@ -1,2 +1,68 @@
 $text_color:#292728;
 $bgc_button:#E1003C;
+
+section{
+font-family: sans-serif;
+background-color: #F9F9F9;
+margin-top: 0;
+
+
+    .main_container{
+        padding-top: 15rem;
+
+            .text_div p{
+                padding: 0;
+                margin: 0;
+                font-size: 5rem;
+               font-weight: bold;
+                color: $text_color;
+            }
+            .button_div{
+                padding-left: 26rem;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+
+                    .apply_button{
+                        padding: 1.5rem 4rem;
+                        background-color: $bgc_button;
+                        border-radius: 2rem;
+                        color: white;
+                        font-weight: bold;
+                        margin-right: 2rem;
+                        transition: transform 0.3s ease;
+
+                            &:hover{
+                            transform: scale(1.05);
+                              opacity: 0.8;
+
+                            }
+                    }
+                    .learn_more{
+                        padding: 1.5rem 4rem;
+                        background-color: white;
+                        border-radius: 2rem;
+                        color: $bgc_button;
+                        font-weight: bold;
+                        margin-right: 2rem;
+                        border: solid 1px $bgc_button;
+                        transition: transform 0.3s ease;
+
+                            &:hover{
+                            transform: scale(1.05);
+                            opacity: 0.8;
+
+                            }
+                    
+                    }
+            }
+                img{
+                    width: 100%;
+                }
+    }
+    .flaoting_image{
+
+            .img{
+                height: 2rem;
+            }
+    }
+}
