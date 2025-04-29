@@ -1,0 +1,45 @@
+$bgc_button:#E1003C;
+$text_color:#FFFFFF;
+$hover_text:#9A9999;
+
+header{
+    background-color: #fff;
+    padding: 1.5rem 22rem;
+    font-family: sans-serif;
+
+
+    .header_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 2rem;
+            color: $bgc_button;
+            font-weight: bold;
+        }
+
+        .link_div ul{
+            display: flex;
+            gap: 1rem;
+            color: $bgc_button; 
+
+            &:hover{
+                color:$hover_text ;
+            }
+        }
+        .apply_button{
+            color: $text_color;
+            background-color: $bgc_button;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            transition: padding 0.3s ease;
+
+            &:hover{
+                padding: 1.1rem 2.1rem;
+                opacity: 0.8;
+
+            }
+        }
+    }
+}
