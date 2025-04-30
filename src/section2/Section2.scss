@@ -9,15 +9,14 @@ $image_color:#FFEBF0;
 
     .main_container{
         display: flex;
-        gap: 5rem;
-        padding: 8rem 18rem;
+        padding: 8rem 20rem;
         align-items: start;
 
 
 
         .left_container{
-            border: solid 1px red;
-            padding: 2rem 12rem;
+            border: none;
+            padding: 1rem 8rem;
 
                 .Bold_text{
                     font-size: 2.5rem;
@@ -49,15 +48,45 @@ $image_color:#FFEBF0;
            gap: 1rem;
 
 
-                .div_header{
-                    display: flex;
-                    padding: 1rem 2rem;
+               .button1{
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+                    width: 32rem;
+                    border-radius: 2rem;
 
-                        img{
-                            background-color:$image_color ;
-                         
-                            
-                            height: 50px;
+                        .div_header {
+                            display: flex;
+                            justify-content: space-around;
+                           padding-top: 1.5rem;
+                           padding-bottom: 1.5rem;
+                            align-items: center;
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                            box-shadow: 5px 5px 7px rgba(85, 83, 83, 0.6);
+                            // border: .5px solid #E4E4E4;
+                            width: 100%;
+                            cursor: pointer;
+                            border-radius: 2rem;
+
+                                .img_div{
+                                    background-color:$image_color ;
+                                    padding: .5rem;
+                                    border-radius: 50%;
+                                }
+                                span{
+                                    margin-left: 5rem;
+                                }
+
+                        }
+                        .text{
+                            color: $text_color;
+                            line-height: 2;
+                            padding: 2rem;
+                            display: none;
+
+                                p{
+                                    margin-top: 2rem;
+                                }
+                          
                         }
                 }
         
