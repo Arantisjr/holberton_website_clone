@@ -1,0 +1,27 @@
+.s3upper_div{
+    background-color: #F1F2F2;
+    padding: 10rem 25rem;
+
+        .s3header{
+            font-size: 3rem;
+            font-weight: 500;
+            text-align: center;
+
+                span{
+                    font-weight: bolder;
+                }
+        }
+        .s3texts{
+            padding: 3rem 15rem;
+            color: #515051;
+        }
+}
+
+.s3main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 2rem 5rem;
+    gap: 2rem;
+   
+    
+}

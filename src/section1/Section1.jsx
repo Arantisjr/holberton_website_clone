@@ -5,7 +5,7 @@ import floating_imgae from '../assets/logo.svg'
 
 const Section1 = () =>{
 
-    return(
+    return( 
         <>
         <section>
             <div className="main_container">
@@ -18,7 +18,7 @@ const Section1 = () =>{
             <button className='apply_button'><a href="">Apply now</a></button>
             <button className='learn_more'><a href="">Learn more</a></button>
             </div>
-            <img src={page_image} alt="an image of a girl" />
+            <img className='image_girl' src={page_image} alt="an image of a girl" />
 
             <div className="flaoting_image">
                 <img src={floating_imgae} alt="logo_image" />

@@ -1,0 +1,86 @@
+$button_color:#E1003C;
+$text_clor:#A09C9D;
+.image_div{
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+
+        .header_img{
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .s3text_div{
+            line-height: 2; 
+            padding: 2rem 3rem;
+
+                .text1{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: $button_color;
+                    margin-bottom: 1rem;
+                }
+                .text2{
+                    color: $text_clor;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+        }
+        .pl_div{
+            padding: 2rem 3rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            color: $text_clor;
+            font-style: italic;
+          
+
+                .laptop_icon{
+                    background-color: #FFEBF0;
+                    padding: .5rem;
+                    border-radius: 50%;
+                 
+
+
+                        img{
+                            height:3rem;
+                            width: 4rem;
+                        }
+                }
+
+          }    
+          .footer_buttons{
+            display: flex;
+            gap: 2rem;
+            padding: 2rem 3rem;
+            font-weight: 400;
+
+                .buton_more{
+                    background-color: $button_color;
+                    color: white;
+                    padding: 1rem 2rem;
+                    border: none;
+                    border-radius: 2rem;
+                    animation: transform 2s ease;
+                    cursor: pointer;
+
+                         &:hover{
+                            transform: scale(1.05);
+
+                        }
+                }
+                .campus{
+                    color: $button_color;
+                    border: 1px solid $button_color;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    animation: transform 2s ease;
+
+                    &:hover{
+                        transform: scale(1.05);
+
+                    }
+                }
+          }
+
+}
