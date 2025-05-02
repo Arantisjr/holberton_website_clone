@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import './tailwind.css';
 
 *{
     box-sizing: border-box;
@@ -8,5 +8,6 @@
    }
 body{
     height: 100vh;
+    font-family: sans-serif;
 
 }

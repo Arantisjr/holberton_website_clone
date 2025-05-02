@@ -1,0 +1,82 @@
+@import '../tailwind.css';
+
+.s4sometext{
+    text-align: center;
+    color:#A19D9E;
+    font-weight: 500;
+}
+.s4red_div{
+    background-color: #E1003C;
+    padding: 5rem 30rem;
+    display: flex;
+    color: white;
+    gap: 2rem;
+    margin-top: 4rem;
+
+            .s4ready{
+                font-size: 3rem;
+            }
+            .started{
+                background-color: #E1003C;
+                border: 1px solid white;
+                padding: 1rem 4rem;
+                border-radius: 2rem;
+                transition: transform 1s ease;
+                cursor: pointer;
+
+                    &:hover{
+                        transform: scale(1.1);
+
+                    }
+
+            }
+}
+.s4school_div{
+    margin-top: 3rem;
+    padding: 3rem 22rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+   
+
+        .s4picture_div{
+            
+
+                .s4image1{
+                    border-radius: 1rem;
+                    height: 100%;
+                }
+        }
+        .s4picture_text{
+            // line-height: 2;
+            padding: 2rem 1rem;
+           
+
+                .s4head_text{
+                    color: #E1003C;
+                    margin-bottom: 1rem;
+                }
+                .s4h2{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                }
+                .s4paragraph1, .s4paragraph2, .s4paragraph3{
+                    margin-top: 2rem;
+                    color: #828081;
+                    line-height: 2;
+                }
+                .s4findcampus{
+                    padding: 1.2rem 3.5rem;
+                    background-color: #E1003C;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 2rem;
+                    margin-top: 2rem;
+
+                }
+                
+                  
+        }
+}

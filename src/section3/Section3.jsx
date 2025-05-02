@@ -68,6 +68,13 @@ const Section3 = () =>{
             />
             
         </div>
+        <div className="s3scrolling_div">
+            <div className="s3scroll">
+                <button className='lessthan'>&lt;</button>
+                <button className='greaterthan'>&gt;</button>
+
+            </div>
+        </div>
         </>
     )
 }

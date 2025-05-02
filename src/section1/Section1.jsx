@@ -8,9 +8,9 @@ const Section1 = () =>{
     return( 
         <>
         <section>
-            <div className="main_container">
+            <div  className="main_container">
             <div className="text_div">
-                 <p>Become a</p>
+                 <p> Become a</p>
                <p> Software Engineer.</p>
           
             </div>
