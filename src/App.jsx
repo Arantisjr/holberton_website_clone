@@ -10,6 +10,7 @@ import Section4 from './section4/Section4'
 import Section5 from './section5/Section5'
 import Section6 from './section6/Section6'
 import Section7 from './section7/Section7'
+import Footer from './footer/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   <Section5 />
   <Section6 />
   <Section7 />
+  <Footer />
     </>
   )
 }
