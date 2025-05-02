@@ -1,0 +1,42 @@
+
+.s7main_container{
+    display: flex;
+    gap: 2rem;
+   padding: 4rem 3rem ;
+   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    min-width: 50rem;
+    align-items: center;
+    border-radius: 2rem;
+
+        .s7img{
+            height: 100%;
+            width: 100%;
+
+
+            img{
+               border-radius: 50%;
+                height: 100%;
+           
+            }
+         
+        }
+        .s7text_div{
+
+            .s7star_img{
+                margin-bottom: 1rem;
+            }
+            .s7paragraph1{
+                color: #818183;
+                line-height: 2;
+                margin-bottom: 1rem;
+            }
+            .s7name{
+                color: #E1003C;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            .s7title{
+                color: #818183; 
+            }
+        }
+}

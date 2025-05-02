@@ -1,0 +1,62 @@
+ .s6main_container{
+    padding: 5rem 20rem;
+
+        .s6text_div{
+            text-align: center;
+            padding: 3rem 18rem;
+                .s6header{
+                    font-size: 3rem;
+                        span{
+                            font-weight: bold;
+                            color: #292728;
+                        }
+                }
+                .s6some_text{
+                    margin-top: 2rem;
+                    color: #747474;
+                }
+        }
+        .s6industries{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 2rem 3rem;
+          
+
+                    img{
+                        opacity: 0.8;
+                     filter: grayscale(100%) ;
+                     width: 8rem;
+
+                    }
+        }
+ }
+ .s6img_div{
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+
+          .s6image{
+             width: 100%;
+         }
+         .s6play_button{
+            position: absolute;
+            top: 38rem;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            padding: 2rem;
+            
+                .play_button{
+                   background-color: red;
+                   padding: 1rem 2rem;
+                   border-radius: 50%;
+                    cursor: pointer;
+
+                }
+
+         }
+ }

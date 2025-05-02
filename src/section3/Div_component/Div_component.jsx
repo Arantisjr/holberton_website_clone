@@ -2,7 +2,7 @@ import '../Div_component/Div_component.scss'
 import laptop_img from '../images/laptop.svg'
 
 const Div_component = (props) =>{
-    const{head_img, paragraph1, paragraph2, some_text} = props;
+    const{head_img, paragraph1, paragraph2, some_text} = props; 
 
 
 
@@ -31,4 +31,4 @@ const Div_component = (props) =>{
         </>
     )
 }
-export default Div_component
+export default Div_component 
