@@ -1,0 +1,68 @@
+.fbreakline{
+    border: 1px solid  #F9E8E8;
+    }
+.fmain_container{
+  padding: 6rem 22rem 1rem 22rem;
+
+        .fsocial{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 4rem;
+            
+
+                img{
+                    width: 18rem;
+                    height: 3rem;
+                }
+                .fsociallinks ul{
+                    display: flex;
+                    gap: 2rem;
+                }
+                
+        }
+    
+        .fdownlinks{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3rem;
+            padding-right: 6rem;
+            font-size: 1.1rem;
+            padding-bottom: 5rem;
+
+                    .ffirstlinks ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                            
+                            li{
+                                cursor: pointer;
+                                transition: color 1s ease;
+                                    &:hover{
+                                        color: red;
+                                    }
+                            }
+
+                    }
+        }    
+        .ffooter{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            color: #E1003C;
+            font-size: 15px;
+
+                    .fotherlinks ul{
+                        display: flex;
+                        gap: 2rem;
+
+                        li{
+                            cursor: pointer;
+                            transition: color 1s ease;
+                                &:hover{
+                                    color: #C2C1C2;
+                                }
+                        }
+                    }
+        }
+
+}
