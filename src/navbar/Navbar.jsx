@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
+import hoberton from '../assets/hoberton.png'
 
 const Navbar = () => {
 
@@ -7,7 +8,7 @@ const Navbar = () => {
         <>
         <header>
             <div className="header_content">
-                <h1><a href="#"> Holberton</a></h1>
+                <h1><a href="#"><img src={hoberton} alt="logo" /></a></h1>
                 <div className="link_div">
                     <ul>
                         <li className='nav_links'><a href="#">Programs</a></li>

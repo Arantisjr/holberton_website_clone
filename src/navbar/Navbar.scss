@@ -20,15 +20,16 @@ header{
         align-items: center;
 
         h1{
-            font-size: 2rem;
-            color: $bgc_button;
-            font-weight: bold;
+           img{
+            height: 1.8rem;
+           }
         }
 
         .link_div ul{
             display: flex;
             gap: 1rem;
             color: $bgc_button; 
+            font-weight: bold;
 
             li:hover{
                 color:$hover_text ;
@@ -39,11 +40,11 @@ header{
             background-color: $bgc_button;
             padding: 1rem 2rem;
             border-radius: 50px;
-            transition: transform 0.3s ease;
+            transition: transform 1s ease;
             cursor: pointer;
 
             &:hover{
-               transform: scale(1.05);
+               transform: scale(1.1);
                 opacity: 0.8;
 
             }
