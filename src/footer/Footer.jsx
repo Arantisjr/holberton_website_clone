@@ -1,8 +1,21 @@
 import '../footer/Footer.scss'
 import hoberton from '../assets/hoberton.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
+
+
 
 
 const Footer = () =>{
+    // const envelope = <FontAwesomeIcon icon={faEnvelope} />
+    const facebook =    <FontAwesomeIcon icon={faFacebook} size="2x" color='#E1003C' />
+    const twitter =  <FontAwesomeIcon icon={faTwitter} size="2x" color='#E1003C' />
+    const insta =  <FontAwesomeIcon icon={faInstagram} size="2x" color='#E1003C'/>
+    const linkin =  <FontAwesomeIcon icon={faLinkedin} size="2x" color='#E1003C'/>
+   
     const currentYear = new Date().getFullYear();
 
 
@@ -20,10 +33,10 @@ const Footer = () =>{
           <img src={hoberton} alt="logo" />
             <div className="fsociallinks">
                 <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li>dhhd</li>
-                    <li>djjd</li>
-                    <li>djdkk</li>
+                    <li> <a href="#"> {facebook}</a> </li>
+                    <li> <a href="#"> {twitter} </a></li>
+                    <li> <a href="#"> {insta}   </a></li>
+                    <li> <a href="#"> {linkin}  </a></li>
                 </ul>
             </div>
            </div>
