@@ -6,7 +6,7 @@ Practicing reactjs by cloning the `Hoberton School - School of Computer Science 
 
 ## TECHNOLOGIES USED
 
-- reactjs
+- reactjs,sass
 - Used components props
   
 ### SITE
