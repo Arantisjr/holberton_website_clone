@@ -1,20 +1,16 @@
 # HOBERTONE FRONTEND CLONE
 
-Practicing reactjs by cloning the `Hoberton School - School of Computer Science and Programming` website
-
-
+Cloned the `Hoberton School - School of Computer Science and Programming` Homepage 
 
 ## TECHNOLOGIES USED
-
-- reactjs,sass
+- Reactjs,sass
 - Used components props
   
 ### SITE
-
 - The site i cloned =>
-
 [Holberton.com](https://www.holbertonschool.com/)
 
-#### AUTHOR
 
+
+#### AUTHOR
 - [Arantis Junior](https://github.com/Arantisjr)
