@@ -2,7 +2,7 @@
 
 Cloned the `Hoberton School - School of Computer Science and Programming` Homepage 
 
-[kive preview](https://holbertone-clone.onrender.com/)
+[Live preview](https://holbertone-clone.onrender.com/)
 
 ## TECHNOLOGIES USED
 - Reactjs,sass
