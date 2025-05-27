@@ -23,6 +23,14 @@
     gap: 2rem;
     position: relative;
 
+
+    .s3main_scroll{
+        display: block;
+    }
+    .s3main_dscroll{
+        display: none;
+    }
+
     .s3scrolling_div{
         padding: 2rem 30rem;
         position: absolute;

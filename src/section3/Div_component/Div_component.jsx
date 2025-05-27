@@ -2,13 +2,13 @@ import '../Div_component/Div_component.scss'
 import laptop_img from '../images/laptop.svg'
 
 const Div_component = (props) =>{
-    const{head_img, paragraph1, paragraph2, some_text} = props; 
+    const{head_img, paragraph1, paragraph2, some_text, styling} = props; 
 
 
 
     return(
         <>
-        <div className="image_div">
+        <div className={styling == "" ? 'image_div': `image_div ${styling}` }>
             <img src={head_img} alt="header image" className='header_img' />
             <div className="s3text_div">
                 <p className='text1'>{paragraph1}</p>

@@ -1,6 +1,7 @@
 import '../section3/Section3.scss'
 import Div_component from './Div_component/Div_component'
 import { courses } from '../assets/assets'
+import { useState } from 'react'
 
 
 
@@ -8,7 +9,30 @@ import { courses } from '../assets/assets'
 
 
 const Section3 = () =>{
+    const[currentslide, setcurrentSlide] =  useState([0,1,2])
 
+    const handleLeftScroll = () =>{
+         setcurrentSlide( () => {
+           const  newArray = [...currentslide];
+            const firstvalue = newArray[0] === 0 ? courses.length - 1  : newArray[0] - 1;
+            newArray.pop()
+            newArray.unshift(firstvalue);
+            return newArray
+    })
+    }
+
+    const handleRightScroll = () =>{
+        setcurrentSlide( () => {
+            const newArray = [...currentslide];
+            const   lastValue = newArray[2] === courses.length - 1 ? 0 : newArray[2] + 1 ;
+            newArray.shift();
+            newArray.push(lastValue);
+            return newArray;
+        
+    })
+
+    }
+ 
 
     return(
         <> 
@@ -25,16 +49,18 @@ const Section3 = () =>{
             </div>
         <div className="s3main_container"> 
             {
-                courses.map((course)=>{
-                   return <Div_component key={course.id} {...course} />
+                courses.map((course, index)=>{
+                   return(
+        
+                        <Div_component key={course.id} styling={ currentslide.includes(index) ? 's3main_scroll' : 's3main_dscroll'} {...course} />
+                   ) 
                 })
             }
 
         <div className="s3scrolling_div">
             <div className="s3scroll">
-                <button className='lessthan'>&lt;</button>
-                <button className='greaterthan'>&gt;</button>
-
+                <button className='lessthan' onClick={handleLeftScroll}>&lt;</button>
+                <button className='greaterthan' onClick={handleRightScroll}>&gt;</button>
             </div>
         </div>
             
