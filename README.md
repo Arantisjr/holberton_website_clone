@@ -1,20 +1,22 @@
 # HOBERTONE FRONTEND CLONE
 
-Practicing reactjs by cloning the `Hoberton School - School of Computer Science and Programming` website
+Cloned the `Hoberton School - School of Computer Science and Programming` Homepage 
 
-
+[Live preview](https://holbertone-clone.onrender.com/)
 
 ## TECHNOLOGIES USED
-
-- reactjs
+- Reactjs,sass
 - Used components props
   
 ### SITE
-
 - The site i cloned =>
-
 [Holberton.com](https://www.holbertonschool.com/)
 
-#### AUTHOR
+## SETUP
+Clone this repo to your desktop and run ``npm install`` to install all the dependencies.
+### USAGE
+Once the dependencies are installed, you can run ``npm run dev`` to start the application. You will then be able to access it on localhost 
 
+
+#### AUTHOR
 - [Arantis Junior](https://github.com/Arantisjr)
