@@ -43,9 +43,9 @@ $image_color:#FFEBF0;
                 }
         }
         .right_container{
-           display: grid;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-           gap: 1rem;
+          display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
 
                .button1{
@@ -81,7 +81,6 @@ $image_color:#FFEBF0;
                             color: $text_color;
                             line-height: 2;
                             padding: 2rem;
-                            display: none;
 
                                 p{
                                     margin-top: 2rem;
