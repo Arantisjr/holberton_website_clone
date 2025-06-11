@@ -1,4 +1,4 @@
-# HOBERTONE FRONTEND CLONE
+# HOLBERTONE FRONTEND CLONE
 
 Cloned the `Hoberton School - School of Computer Science and Programming` Homepage 
 
