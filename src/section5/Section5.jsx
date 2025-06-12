@@ -20,10 +20,7 @@ const Section5 = () =>{
                 </div> 
 
                 <button className='s5keepreading'> Keep reading</button>
-                <div className="s5navigation">
-                        <button className='s5lessthan'>&lt;</button>
-                        <button className='s5gtthan'>&gt;</button>
-                    </div>
+               
 
             </div>
            
