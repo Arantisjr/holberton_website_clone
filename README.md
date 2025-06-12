@@ -1,28 +1,70 @@
-# HOLBERTONE FRONTEND CLONE
+# Holbertone Frontend Clone
 
-Cloned the `Holberton School - School of Computer Science and Programming` Homepage 
+A  clone of the [Holberton School](https://www.holbertonschool.com/) homepage, built with React and Sass.  
+Live demo: [holbertone-clone.onrender.com](https://holbertone-clone.onrender.com/)
 
-[Live preview](https://holbertone-clone.onrender.com/)
+---
 
-## TECHNOLOGIES USED
+## 🚀 Features
 
-- Reactjs,sass
-- Used components props
-  
-### SITE
+- Pixel-perfect clone of the Holberton School homepage
+- Modular React components
+- Clean, maintainable Sass styling
+- Interactive UI elements (dropdowns, sliders, etc.)
 
-- The site i cloned =>
-[Holberton.com](https://www.holbertonschool.com/)
+---
 
-## SETUP
+## 🛠️ Technologies Used
 
-Clone this repo to your desktop and run ``npm install`` to install all the dependencies.
+- [React](https://react.dev/)
+- [Sass](https://sass-lang.com/)
+- [Vite](https://vitejs.dev/) (for fast development)
+- Component-based architecture
 
-### USAGE
+---
 
-Once the dependencies are installed, you can run ``npm run dev`` to start the application. You will then be able to access it on localhost 
+## 📦 Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Arantisjr/holbertone-clone.git
+   cd holbertone-clone
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📄 Usage
+
+- Explore the homepage clone and interact with all UI elements.
+- Modify components or styles as needed for your own learning or projects.
+
+---
 
 
-#### AUTHOR
+## 🔗 Original Site
+
+This project is a clone of [Holberton School](https://www.holbertonschool.com/).
+
+---
+
+## 👤 Author
 
 - [Arantis Junior](https://github.com/Arantisjr)
+
+---
+
+## 📃 License
+
+This project is for educational purposes only and is not affiliated with Holberton School.
