@@ -2,7 +2,7 @@
 
 .s7flex_container{
     display: flex;
-    padding: 10rem 20rem;
+    padding: 10rem 19rem;
     gap: 2rem;
     position: relative;
            
@@ -16,6 +16,7 @@
 
         .s7scroll{
             display: flex;
+            align-items: center;
             justify-content: space-between;
             font-size: 2rem;
 

@@ -6,21 +6,32 @@
    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
     min-width: 55rem;
     align-items: center;
+    justify-content: space-between;
     border-radius: 2rem;
 
-        .s7img{
-            height: 100%;
-            width: 100%;
+        .s7img {
+                // width: 100px;      
+                //  height: 100px;
+                //  display: flex;
+                //  align-items: center;
+                //  justify-content: center;
+                //  overflow: hidden;
+                //  border-radius: 50%;
+                //  background: #fff;  
+                }
 
-
-            img{
-               border-radius: 50%;
-                height: 80%;
-                transform: scale(1.05);
-           
+            .a_person{
+                // max-width: 100%;
+                // height: auto;
+                // display: block;
+                object-fit: fill;
+                
+                width: 300px;
+                height: 200px;
+                border-radius: 50%;  
             }
          
-        }
+}
         .s7text_div{
 
             .s7star_img{
@@ -40,4 +51,3 @@
                 color: #818183; 
             }
         }
-}

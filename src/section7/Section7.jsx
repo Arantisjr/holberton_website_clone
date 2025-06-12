@@ -28,12 +28,11 @@ const Section7 = () =>{
           <Rating
             key={Entities[firstIndex].id}
             {...Entities[firstIndex]}
-            className="active"
+          
           />
           <Rating
             key={Entities[secondIndex].id}
             {...Entities[secondIndex]}
-            className="active"
           />
         </div>
         <div className="s7scrolling_div">
