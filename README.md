@@ -1,4 +1,4 @@
-# Holbertone Frontend Clone
+# Holberton Frontend Clone
 
 A  clone of the [Holberton School](https://www.holbertonschool.com/) homepage, built with React and Sass.  
 Live demo: [holbertone-clone.onrender.com](https://holbertone-clone.onrender.com/)
