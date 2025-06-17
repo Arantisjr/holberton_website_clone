@@ -1,28 +1,41 @@
+
+.s3carousel_wrapper{
+    position: relative;
+}
 .s3upper_div{
     background-color: #F1F2F2;
     padding: 10rem 25rem; 
 
-        .s3header{
-            font-size: 3rem;
-            font-weight: 500;
-            text-align: center;
+    .s3header{
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
 
-                span{
-                    font-weight: bolder;
-                }
+        span{
+            font-weight: bolder;
         }
-        .s3texts{
-            padding: 3rem 15rem;
-            color: #515051;
-        }
+    }
+    .s3texts{
+        padding: 3rem 15rem;
+        color: #515051;
+    }
 }
 
 .s3main_container{
     display: flex;
-    padding: 2rem 5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     gap: 2rem;
+    padding: 2rem 25rem;
+    width: 100%;
     position: relative;
 
+// hide scrollbar for all browsers
+     &::-webkit-scrollbar {
+    display: none;
+  }
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
     .s3main_scroll{
         display: block;
@@ -32,38 +45,45 @@
     }
 
     .s3scrolling_div{
-        padding: 2rem 30rem;
         position: absolute;
-        top: 20rem;
-        width: 100%;
-    
-            .s3scroll{
-                display: flex;
-                justify-content: space-between;
-                font-size: 2rem;
-    
-                    .greaterthan, .lessthan{
-                        padding: 1rem 2rem;
-                        background-color: #fff;
-                        border-radius: 50%;
-                        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
-                        cursor: pointer;
-                        transition: transform 1s ease;
-                        transition: background-color 1s ease;
-                        transition: color 1s ease;
+        left: 50%;
+        bottom: -4rem;
+        transform: translateX(-50%);
+        width: auto;
+        padding: 0;
 
-                            &:hover{
-                                background-color: red;
-                                color: white;
-                                transform: scale(1.1);
-                            }
-    
-                    }
-              
-            }
-    
-    
+        .s3scroll{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            font-size: 2rem;
+
+        }
     }
-   
-    
+}
+.s3main_mainbuttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 18rem;
+    position: absolute;
+    top: 40%;
+        .greaterthan, .lessthan{
+            padding: 1.5rem 2rem;
+            background-color: #fff;
+            font-weight: bold;
+            border-radius: 50%;
+            bottom: none;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        
+            &:hover{
+                background-color: red;
+                color: white;
+                transform: scale(1.1);
+            }
+        }
 }

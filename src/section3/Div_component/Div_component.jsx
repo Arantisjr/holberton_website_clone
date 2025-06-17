@@ -3,7 +3,7 @@ import laptop_img from '../images/laptop.svg'
 import React, { useEffect } from 'react'
 
 const Div_component = (props) =>{
-    const{head_img, paragraph1, paragraph2, some_text, styling} = props; 
+    const{head_img, paragraph1, paragraph2, some_text, } = props; 
 
       useEffect(() => {
         const hiddenElements = document.querySelectorAll('.image_div');
@@ -14,7 +14,7 @@ const Div_component = (props) =>{
               
               entry.target.classList.add('show');
             } else {
-              entry.target.classList.remove('show');
+              // entry.target.classList.remove('show');
             }
           });
         });      
@@ -28,7 +28,7 @@ const Div_component = (props) =>{
 
     return(
         <>
-        <div  className={styling == "" ? 'image_div': `image_div ${styling}` }>
+        <div  className= 'image_div'>
             <img src={head_img} alt="header image" className='header_img' />
             <div className="s3text_div">
                 <p className='text1'>{paragraph1}</p>

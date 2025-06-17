@@ -5,7 +5,7 @@ import image2 from '../assets/slide3.jpeg'
 
 export const Entities = [
 {
-    id:'1',
+    id:'1', 
     img:image,
     starimg:starimg,
     paragraph1:`"Holberton School is able to attract students of all genders, rich or poor, formally educated or not, 
