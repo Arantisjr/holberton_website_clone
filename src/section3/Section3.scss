@@ -25,6 +25,8 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+overflow-y: hidden; // Prevent vertical scrolling
+
     gap: 2rem;
     padding: 2rem 25rem;
     width: 100%;
