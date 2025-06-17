@@ -18,10 +18,31 @@ import credit from '../assets/credit.jpeg'
 import pintrest from '../assets/pintrest.jpeg'
 import creditjusto from '../assets/credijusto.png'
 import videoimg from '../assets/videoimg.jpg'
+import { useEffect } from 'react'
 
 
 
 const Section6 = () =>{
+        useEffect(() => {
+                    const hiddenElements = document.querySelectorAll('.s6industries');
+                    const observer = new IntersectionObserver((entries) => {
+                      entries.forEach((entry) => {
+                        console.log(entry);
+                        if (entry.isIntersecting) {
+                          
+                          entry.target.classList.add('show');
+                        } else {
+                          entry.target.classList.remove('show');
+                        }
+                      });
+                    });      
+                
+                    hiddenElements.forEach((el) => observer.observe(el));
+                
+                    return () => {
+                      hiddenElements.forEach((el) => observer.unobserve(el));
+                    };
+                  }, []);
 
     return(
         <>

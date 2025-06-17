@@ -40,14 +40,25 @@
     align-items: center;
    
 
-        .s4picture_div{
+        .s4picture_div{ 
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            transform: translateY(30%);
+       
             
 
                 .s4image1{
                     border-radius: 1rem;
                     height: 100%;
+                    
                 }
         }
+         .show{
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+            }
         .s4picture_text{
             padding: 2rem 1rem;
            

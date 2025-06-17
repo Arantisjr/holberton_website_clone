@@ -1,14 +1,34 @@
 import '../Div_component/Div_component.scss'
 import laptop_img from '../images/laptop.svg'
+import React, { useEffect } from 'react'
 
 const Div_component = (props) =>{
     const{head_img, paragraph1, paragraph2, some_text, styling} = props; 
 
-
+      useEffect(() => {
+        const hiddenElements = document.querySelectorAll('.image_div');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+              
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        });      
+    
+        hiddenElements.forEach((el) => observer.observe(el));
+    
+        return () => {
+          hiddenElements.forEach((el) => observer.unobserve(el));
+        };
+      }, []);
 
     return(
         <>
-        <div className={styling == "" ? 'image_div': `image_div ${styling}` }>
+        <div  className={styling == "" ? 'image_div': `image_div ${styling}` }>
             <img src={head_img} alt="header image" className='header_img' />
             <div className="s3text_div">
                 <p className='text1'>{paragraph1}</p>

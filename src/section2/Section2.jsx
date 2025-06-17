@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../section2/Section2.scss";
 import icon1 from "../assets/icon1.svg";
@@ -10,6 +10,27 @@ import icon5 from "../assets/icon5.svg";
 const Section2 = () => {
   // Store the index of the open dropdown, or null if none is open
   const [openIndex, setOpenIndex] = useState(null);
+
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.button1');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });      
+
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   // Data for each dropdown
   const dropdowns = [
@@ -130,7 +151,7 @@ const Section2 = () => {
           </div>
           <div className="right_container">
             {dropdowns.map((item, idx) => (
-              <div className="button1" key={idx}>
+              <div className="button1"  key={idx}>
                 <button
                   onClick={() => handleToggle(idx)}
                   className="div_header"
@@ -151,6 +172,6 @@ const Section2 = () => {
       </section>
     </>
   );
-};
+}
 
 export default Section2;
