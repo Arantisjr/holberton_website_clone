@@ -21,7 +21,7 @@ const Section3 = () => {
     };
 
     return (
-        <>
+        <> 
             <div className="s3upper_div">
                 <p className='s3header'>
                     Learn <span>software development</span> <br />

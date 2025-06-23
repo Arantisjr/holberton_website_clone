@@ -63,7 +63,7 @@ const Section4 = () =>{
                 </div>
 
         </div>
-
+ 
         <div className="s4school_div">
              <div className="s4picture_text">
                     <p className='s4head_text'>

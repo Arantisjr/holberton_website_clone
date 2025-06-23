@@ -5,7 +5,7 @@ import floating_imgae from '../assets/logo.svg'
 
 const Section1 = () =>{
 
-    return( 
+    return(  
         <>
         <section>
             <div  className="main_container">

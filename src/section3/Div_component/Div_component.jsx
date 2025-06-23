@@ -14,7 +14,7 @@ const Div_component = (props) =>{
               
               entry.target.classList.add('show');
             } else {
-              // entry.target.classList.remove('show');
+              // entry.target.classList.remove('show'); 
             }
           });
         });      
@@ -22,7 +22,7 @@ const Div_component = (props) =>{
         hiddenElements.forEach((el) => observer.observe(el));
     
         return () => {
-          hiddenElements.forEach((el) => observer.unobserve(el));
+          hiddenElements.forEach((el) => observer.unobserve(el));  
         };
       }, []);
 

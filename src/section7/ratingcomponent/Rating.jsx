@@ -32,7 +32,7 @@ const Rating = (props) =>{
         
         <div className="s7main_container">
             <div className='s7img'>
-                <img className='a_person' src={img} alt="a person" />
+                <img className='a_person' src={img} alt="a person" /> 
             </div>
             <div className="s7text_div">
                 <img className='s7star_img' src={starimg} alt="ratings" />

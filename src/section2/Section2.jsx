@@ -129,8 +129,8 @@ const Section2 = () => {
   };
 
   return (
-    <>
-      <section className="section2">
+    <> 
+      <section className="section2"> 
         <div className="main_container">
           <div className="left_container">
             <p className="Bold_text">
