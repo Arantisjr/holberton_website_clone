@@ -11,39 +11,43 @@ $image_color:#FFEBF0;
         display: flex;
         padding: 8rem 20rem;
         align-items: start;
-        // @media (width <= 768px){
-        //     flex-direction: column;
-        //     align-items: center;
-        //     justify-content: center;
-        //     padding: 2rem;
-        // }
+        @media(width <= 500px){
+            flex-direction: column;
+            padding: 2rem;
+            gap: 2rem;
+        }
+       
 
 
 
         .left_container{
             border: none;
             padding: 1rem 8rem;
-            // width: 100%;
+            flex: 1 1 0;
+            min-width: 0;
+                @media(width <= 500px){
+                    padding: 1rem;
+                }
+     
 
                 .Bold_text{
                     font-size: 2.5rem;
                     line-height: 1.5;
                     margin-bottom: 1rem;
+                  
 
                         span{
                             font-weight: bold;
                         }
-                        // @media (width <= 768px){
-                        //     font-size: 1rem;
-                        //     width: 90vw;
-                        //     background-color: red;
-                        // }
+                       
                 }
                 .some_text1{
                     color: $text_color;
                     line-height: 2;
                     font-size: 1rem;
                     margin-bottom: 1rem;
+                   
+
                 
                 }
                 .some_text2{
@@ -51,13 +55,17 @@ $image_color:#FFEBF0;
                     line-height: 2;
                     font-size: 1rem;
                     margin-bottom: 1rem;
+                  
+
                 
                 }
         }
         .right_container{
           display: flex;
-  flex-direction: column;
-  gap: 1rem;
+            flex-direction: column;
+            gap: 1rem;
+            flex: 1 1 0;
+            min-width: 0;
 
 
                .button1{
@@ -68,10 +76,11 @@ $image_color:#FFEBF0;
                     transition: all 1s;
                     filter: blur(5px);
                     transform: translateX(100%);
-                        // @media (width <= 768px){
-                        //    width: 90vw;
-                        // //    margin: 1rem;
-                        // }
+                        @media(width <= 500px){
+                            width: 100%;
+                            max-width: none;
+                            
+                        }
 
                         .div_header {
                             display: flex;

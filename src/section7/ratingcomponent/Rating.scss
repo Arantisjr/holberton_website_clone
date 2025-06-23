@@ -5,6 +5,7 @@
    padding: 4rem 3rem ;
    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
     min-width: 55rem;
+    // width: 100vw;
     align-items: center;
     justify-content: space-between;
     border-radius: 2rem;
@@ -12,16 +13,27 @@
     transition: all 1s;
     filter: blur(5px);
     transform: translateY(25%);
+        @media(width <= 500px){
+            flex-direction: column;
+             min-width: unset; 
+             width: 50rem;
+             
+        }
 
         .s7img {
-            display: block; /* Ensures the image behaves like a block element */
-            margin: auto;
+            // display: block; /* Ensures the image behaves like a block element */
+            // margin: auto;
             width: 30em;
             height: 10em;
-            object-fit: cover;
-            scrollbar-width: rounded;
-            align-content: center;
-                          }
+            // object-fit: cover;
+            // scrollbar-width: rounded;
+            // align-content: center;
+            @media(width<=500px){
+            width: 8em;
+            height: 5em;
+            background-color: red;
+
+                        }}
 
             .a_person{
          
@@ -37,6 +49,7 @@
     transform: translateY(0);
             }
         .s7text_div{
+     
 
             .s7star_img{
                 margin-bottom: 1rem;

@@ -66,6 +66,7 @@ const Section4 = () =>{
  
         <div className="s4school_div">
              <div className="s4picture_text">
+  
                     <p className='s4head_text'>
                     FLEXIBLE TUITION OPTIONS
                     </p>

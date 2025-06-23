@@ -12,6 +12,12 @@
     color: white;
     gap: 2rem;
     margin-top: 4rem;
+        @media(width<= 500px){
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
 
             .s4ready{
                 font-size: 3rem;
@@ -38,6 +44,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+        @media(width<= 500px){
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
    
 
         .s4picture_div{ 

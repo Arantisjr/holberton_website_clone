@@ -5,6 +5,9 @@
     padding: 10rem 19rem;
     gap: 2rem;
     position: relative;
+        @media(width<500px){
+            padding: 2rem;
+        }
            
 } 
 .s7scrolling_div{
@@ -12,13 +15,23 @@
     position: absolute;
     bottom: -585rem;
     left: -13rem;
-    width: 100%;
+    // width: 100%;
+    @media(width<500px){
+        top: 790rem;
+        padding: 2rem 20rem;
+        // background-color: red;
+    }
 
         .s7scroll{
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 2rem;
+            @media(width<=500px){
+
+                gap: 5rem;
+            }
+            
 
                 .s7lessthan, .s7greaterthan{
                     padding: 1rem 2rem;

@@ -5,6 +5,11 @@
     gap: 5rem;
     margin-top: 3rem;
     background-color: #F1F2F2;
+        @media(width<= 500px){
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 2rem;
+        }
 
    
          

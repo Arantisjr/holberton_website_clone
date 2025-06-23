@@ -9,6 +9,9 @@
         align-items: center;
         width: 100%;
         right: 5%;
+        @media(width<= 500px){
+            gap: 15rem;
+        }
 
 
       }

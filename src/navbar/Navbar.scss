@@ -12,10 +12,20 @@ header{
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    @media(width <=500px){
+        padding: 2rem 1rem;
+        padding-right: 20rem;
+    }
    
 
 
     .header_content{
+         @media(width <=500px){
+                .apply_button, .link_div{
+                    display: none;
+                }
+            }
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -27,7 +37,9 @@ header{
         }
             
 
-        .link_div ul{
+        .link_div {
+           
+            ul{
             display: flex;
             gap: 1rem;
             color: $bgc_button; 
@@ -37,7 +49,7 @@ header{
             li:hover{
                 color:$hover_text ;
             }
-        }
+        }}
         .apply_button{
             color: $text_color;
             background-color: $bgc_button;
@@ -50,6 +62,16 @@ header{
                transform: scale(1.1);
                 opacity: 0.8;
 
+            }
+        }
+        .menu_button{
+            @media(width > 500px){
+                display: none;
+            }
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
             }
         }
     }

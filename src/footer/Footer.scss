@@ -3,12 +3,20 @@
     }
 .fmain_container{
   padding: 6rem 22rem 1rem 22rem;
+  @media(width<=500px){
+    padding: 5rem 1rem;
+  }
 
         .fsocial{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 4rem;
+            @media(width<=500px){
+                flex-direction: column;
+                align-items: start;
+                gap: 2rem;
+            }
             
 
                 img{
@@ -29,6 +37,12 @@
             padding-right: 6rem;
             font-size: 1.1rem;
             padding-bottom: 5rem;
+             @media(width<= 500px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 2rem;
+             }
 
                     .ffirstlinks ul{
                         display: flex;
@@ -45,25 +59,29 @@
 
                     }
         }    
-        .ffooter{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 1rem;
-            color: #E1003C;
-            font-size: 15px;
+        
+    }
+    .ffooter{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        color: #E1003C;
+        font-size: 15px;
+         @media(width<=500px){
+            flex-direction: column-reverse;
+            gap: 1rem;
+         }
 
-                    .fotherlinks ul{
-                        display: flex;
-                        gap: 2rem;
+                .fotherlinks ul{
+                    display: flex;
+                    gap: 2rem;
 
-                        li{
-                            cursor: pointer;
-                            transition: color 1s ease;
-                                &:hover{
-                                    color: #C2C1C2;
-                                }
-                        }
+                    li{
+                        cursor: pointer;
+                        transition: color 1s ease;
+                            &:hover{
+                                color: #C2C1C2;
+                            }
                     }
-        }
-
-}
+                }
+    }

@@ -1,9 +1,15 @@
  .s6main_container{
     padding: 5rem 20rem;
+    @media( width<=500px){
+        padding: 2rem;
+    }
 
         .s6text_div{
             text-align: center;
             padding: 3rem 18rem;
+              @media( width<=500px){
+                padding: 2rem;
+    }
                 .s6header{
                     font-size: 3rem;
                         span{
@@ -12,6 +18,7 @@
                         }
                 }
                 .s6some_text{
+                    font-size: 1rem;
                     margin-top: 2rem;
                     color: #747474;
                 }
@@ -24,6 +31,11 @@
             transition: all 1s;
             filter: blur(5px);
             transform: translateY(25%);
+             @media(width<=500px){
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                align-items: center;
+             }
           
 
                     img{
@@ -58,12 +70,18 @@
             color: white;
             font-size: 2rem;
             padding: 2rem;
+              @media( width<=500px){
+                top: 5rem;
+        
+    }
             
                 .play_button{
-                   background-color: red;
-                   padding: 1rem 2rem;
+                   background-color: rgb(224, 54, 54);
+                   padding: 1rem 1.5rem;
+                   text-align: center;
                    border-radius: 50%;
                     cursor: pointer;
+                    
 
                 }
 
